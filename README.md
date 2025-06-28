@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 # Enhancement--1-
 Enhancement One: Software Design and Engineering Updated U/I
-=======
+
 # CS 499 Computer Science ePortfolio  
 ### June 2025
 
@@ -36,4 +36,4 @@ This entry explores my personal background and goals, offering context for my mo
 
 
 # CS499-Project
->>>>>>> abe535e (first commit)
+
