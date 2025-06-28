@@ -1,69 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
     android:background="@android:color/white">
 
-    <!-- App Logo -->
-
-    <!-- Username Input -->
-
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="24dp"
-        android:contentDescription="App Logo"
-        android:src="@drawable/ic_launcher_foreground" />
-
-    <EditText
-        android:id="@+id/usernameEditText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
-        android:inputType="text"
-        android:drawableLeft="@android:drawable/ic_menu_myplaces"
-        android:padding="10dp"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="16dp" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
 
-    <!-- Password Input -->
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:drawableLeft="@android:drawable/ic_lock_lock"
-        android:padding="10dp"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="24dp" />
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/app_logo"
+            android:src="@drawable/ic_launcher_foreground" />
 
-    <!-- Login Button -->
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:background="@android:color/holo_blue_dark"
-        android:textColor="@android:color/white"
-        android:padding="12dp" />
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:inputType="textPersonName"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="126dp"
-        android:layout_height="wrap_content"
-        android:text="Forgot Password" />
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot Username" />
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
 
-</LinearLayout>
+        <!-- Options -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/forgotPasswordRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="forgot_password" />
+
+            <RadioButton
+                android:id="@+id/forgotUsernameRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="forgot_username" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
