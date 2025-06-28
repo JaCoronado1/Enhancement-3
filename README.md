@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Enhancement--1-
 Enhancement One: Software Design and Engineering Updated U/I
@@ -42,3 +43,7 @@ This entry explores my personal background and goals, offering context for my mo
 # Enhancement-2-
 Enhancement Two: Algorithms and Data Structure
 >>>>>>> 61e8232e8b821718bbe50597fae4f26284512a1c
+=======
+# Enhancement-3
+Enhancement Three: Databases
+>>>>>>> d75c3786e65b508b03392ecdb082671edd44417e
