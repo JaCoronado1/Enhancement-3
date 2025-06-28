@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Enhancement--1-
 Enhancement One: Software Design and Engineering Updated U/I
@@ -37,3 +38,7 @@ This entry explores my personal background and goals, offering context for my mo
 
 # CS499-Project
 
+=======
+# Enhancement-2-
+Enhancement Two: Algorithms and Data Structure
+>>>>>>> 61e8232e8b821718bbe50597fae4f26284512a1c
