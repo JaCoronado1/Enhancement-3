@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="24dp"
+    android:background="@android:color/white"
+    android:gravity="top">
 
     <!-- Phone Number Input -->
     <EditText
@@ -13,17 +15,23 @@
         android:layout_height="wrap_content"
         android:hint="Enter Phone Number"
         android:inputType="phone"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
         android:layout_marginBottom="16dp" />
 
     <!-- Message Input -->
     <EditText
         android:id="@+id/messageEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:hint="Enter Message"
         android:inputType="textMultiLine"
-        android:minLines="3"
-        android:layout_marginBottom="16dp" />
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="24dp" />
 
     <!-- Send SMS Button -->
     <Button
@@ -31,6 +39,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Send SMS"
-        android:background="@android:color/holo_blue_dark"
-        android:textColor="@android:color/white" />
+        android:textAllCaps="false"
+        android:backgroundTint="#6200EE"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
 </LinearLayout>

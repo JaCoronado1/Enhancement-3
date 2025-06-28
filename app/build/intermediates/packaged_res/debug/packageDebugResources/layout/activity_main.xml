@@ -4,36 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#FFFFFF">
 
-    <!-- Add Item Section -->
+    <!-- Inventory Title -->
+    <TextView
+        android:id="@+id/inventoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inventory Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
 
-
+    <!-- Add Item Button -->
     <Button
         android:id="@+id/addItemButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="add_item"
-        android:layout_marginBottom="16dp" />
+        android:text="Add Item"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:layout_marginBottom="12dp" />
 
-    <!-- Clear All Button -->
+    <!-- Clear All Items Button -->
     <Button
         android:id="@+id/clearAllButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Clear All Items"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
         android:layout_marginBottom="16dp" />
 
-    <!-- Inventory List Section -->
-    <TextView
-        android:id="@+id/inventoryTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"
-        android:textSize="18sp" />
-
+    <!-- Inventory ListView -->
     <ListView
         android:id="@+id/inventoryListView"
         android:layout_width="match_parent"
@@ -42,4 +47,3 @@
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
 </LinearLayout>
-
